@@ -93,6 +93,9 @@ groups = [
     {'name': '网络工具',
      'packages': 'nmap metasploit aircrack-ng whois kismet wifite wireshark-cli wireshark-common wireshark-qt wireshark-gtk'},
 
+    # 画图工具
+    {'name': 'plantuml', 'packages': 'plantuml'},
+
     # 数据库
     {'name': 'dbeaver + mysql-workbench', 'packages': 'dbeaver mysql-workbench'},
     {'name': 'datagrip', 'packages': 'datagrip datagrip-jre'},

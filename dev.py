@@ -16,6 +16,16 @@ def config_pip_douban():
     return None
 
 
+def config_maven_aliyun():
+    """
+    配置 maven 阿里云镜像
+    :return:
+    """
+    os.system('mkdir ~/.m2')
+    os.system('cp ./maven-aliyun-setting.xml ~/.m2')
+    return None
+
+
 def config_cnpm_hexo_angular_vue():
     """
     配置 cnpm hexo angular vue
@@ -74,6 +84,7 @@ groups = [
      'packages': 'intellij-idea-ultimate-edition intellij-idea-ultimate-edition-jre'},
     {'name': 'spring-tool-suite', 'packages': 'spring-tool-suite'},
     {'name': 'android-studio', 'packages': 'android-studio'},
+    {'name': '配置 maven 阿里云镜像', 'packages': 'None', 'config': config_maven_aliyun},
 
     # go
     {'name': 'go + go-tools + goland + goland-jre + liteide', 'packages': 'go go-tools goland goland-jre liteide'},

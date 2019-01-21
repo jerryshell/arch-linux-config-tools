@@ -59,6 +59,8 @@ def install_package(packages: str):
     :param packages: 软件包列表，多个软件使用空格分隔
     :return:
     """
+    if packages == 'None':
+        return None
     cmd = PACMAN_TEMPLATE + ' ' + packages
     os.system(cmd)
     return None

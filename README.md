@@ -33,9 +33,8 @@ python3 ./dev.py
 * 安装绘画软件 -- 软件包：gimp krita
 * 安装文件传输工具 -- 软件包：filezilla
 * 安装截图工具 -- 软件包：flameshot
-* 添加 pip 豆瓣源 -- 软件包：
+* 安装搜狗输入法 -- 软件包：fcitx-im fcitx-configtool fcitx-sogoupinyin
 * 安装代理工具（需要额外配置，见 README） -- 软件包：proxychains-ng privoxy
-* 安装搜狗输入法（需要额外配置，见 README） -- 软件包：fcitx-im fcitx-configtool fcitx-sogoupinyin
 * 安装 virtualbox（需要额外配置，见 README） -- 软件包：virtualbox virtualbox-ext-oracle virtualbox-guest-iso
 * 安装 wine（需要额外配置，见 README） -- 软件包：wine wine_gecko wine-mono winetricks
 
@@ -83,7 +82,7 @@ sudo vim /etc/privoxy/match-all.action
 +hide-user-agent{Big Brother is watching you} \
 ```
 
-默认端口: 8118
+默认端口：8118
 
 查看浏览器 UA：http://whatsmyuseragent.org/
 

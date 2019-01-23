@@ -54,6 +54,15 @@ def config_sogou():
     return None
 
 
+def config_vbox():
+    """
+    配置 virtualbox
+    :return:
+    """
+    os.system('sudo usermod -aG vboxusers `whoami`')
+    return None
+
+
 groups = [
     {'name': '安装基本环境', 'packages': 'base base-devel htop git gvim curl wget'},
     {'name': '添加 archlinucn 软件仓库', 'packages': 'None', 'config': config_archlinuxcn},
@@ -73,9 +82,10 @@ groups = [
     {'name': '安装文件传输工具', 'packages': 'filezilla'},
     {'name': '安装截图工具', 'packages': 'flameshot'},
     {'name': '安装搜狗输入法', 'packages': 'fcitx-im fcitx-configtool fcitx-sogoupinyin', 'config': config_sogou},
-    {'name': '安装 privoxy（需要额外配置，见 README）', 'packages': 'proxychains-ng privoxy'},
-    {'name': '安装 virtualbox（需要额外配置，见 README）', 'packages': 'virtualbox virtualbox-ext-oracle virtualbox-guest-iso'},
-    {'name': '安装 wine（需要额外配置，见 README）', 'packages': 'wine wine_gecko wine-mono winetricks'},
+    {'name': '安装 virtualbox', 'packages': 'virtualbox virtualbox-ext-oracle virtualbox-guest-iso',
+     'config': config_vbox},
+    {'name': '安装 privoxy（额外配置见 README）', 'packages': 'proxychains-ng privoxy'},
+    {'name': '安装 wine（字体配置见 README）', 'packages': 'wine wine_gecko wine-mono winetricks'},
 ]
 
 if __name__ == '__main__':

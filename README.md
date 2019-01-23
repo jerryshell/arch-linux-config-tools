@@ -86,10 +86,6 @@ sudo vim /etc/privoxy/match-all.action
 
 查看浏览器 UA：http://whatsmyuseragent.org/
 
-## VirtualBox 虚拟机访问 USB 设备配置
-
-需要将用户名添加到 vboxusers 用户组
-
 ## Wine 配置
 
 ```sh

@@ -89,6 +89,6 @@ sudo vim /etc/privoxy/match-all.action
 ## Wine 配置
 
 ```sh
-# 字体
+# 安装字体，这一步使用国内网络的话大概需要 1 个小时的时间
 winetricks allfonts
 ```

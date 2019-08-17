@@ -102,7 +102,7 @@ groups = [
 
     # 网络工具
     {'name': '网络工具',
-     'packages': 'nmap metasploit aircrack-ng whois kismet wifite wireshark-cli wireshark-common wireshark-qt wireshark-gtk'},
+     'packages': 'nmap metasploit aircrack-ng whois kismet wifite wireshark-cli wireshark-qt wireshark-gtk'},
 
     # 画图工具
     {'name': 'plantuml', 'packages': 'plantuml'},

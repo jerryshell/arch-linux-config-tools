@@ -12,8 +12,8 @@ def show_menu_and_get_user_chose(groups: list) -> str:
     print('----------')
     index = 0
     for group in groups:
-        # print(str(index) + ')' + group['name'] + ' -- 软件包：' + group['packages'])
-        print(str(index) + ')' + group['name'])
+        print(str(index) + ')' + group['name'] + ' -- 软件包：' + group['packages'])
+        # print(str(index) + ')' + group['name'])
         index += 1
     print('q) 退出')
     print('----------')
